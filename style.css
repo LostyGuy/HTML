@@ -8,18 +8,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .container {
     margin: 50px auto;
-    max-width: 80%;
+    max-width: 400px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
+img {
+    max-width: 100px;
+}
 
 button {
     display: block;
@@ -35,7 +36,6 @@ button {
 
 #logo {
     border-radius: 50%;
-    max-width: 100px;
 }
 
 a {
@@ -43,28 +43,9 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-
-
-}
-
-#wid {
-    width: 100%;
-}
-
-
 @media (max-width: 600px) {
     a {
         color: black;
         text-decoration: none;
     }
-    img {
-        width: 100%;
-
-    }
-}
-
-button:hover {
-    background: lightgrey;
 }
