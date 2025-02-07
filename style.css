@@ -3,6 +3,11 @@ body {
     text-align: center;
     background: linear-gradient(to bottom, #ff69b4, #6a5acd);
     color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -30,7 +35,10 @@ button {
 }
 
 #logo {
-
     border-radius: 50%;
+}
 
+a {
+    color: black;
+    text-decoration: none;
 }
