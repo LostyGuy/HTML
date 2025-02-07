@@ -19,7 +19,7 @@ body {
 }
 
 img {
-    max-width: 100px;
+    max-width: 100%;
 }
 
 button {
@@ -36,15 +36,12 @@ button {
 
 #logo {
     border-radius: 50%;
+    max-width: 100px;
 }
 
 a {
     color: black;
     text-decoration: none;
-}
-
-img {
-    max-width: 100%;
 }
 
 @media (max-width: 600px) {
