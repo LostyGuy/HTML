@@ -53,3 +53,7 @@ img {
         text-decoration: none;
     }
 }
+
+button:hover {
+    background: lightgray;
+}
