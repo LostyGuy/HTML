@@ -47,6 +47,10 @@ img {
 
 }
 
+#wid {
+    width: 100%;
+}
+
 
 @media (max-width: 600px) {
     a {
