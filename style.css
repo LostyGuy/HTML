@@ -18,9 +18,6 @@ body {
     border-radius: 10px;
 }
 
-img {
-    max-width: 100px;
-}
 
 button {
     display: block;
@@ -36,6 +33,7 @@ button {
 
 #logo {
     border-radius: 50%;
+    max-width: 100px;
 }
 
 a {
