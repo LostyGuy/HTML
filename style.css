@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -63,6 +65,6 @@ img {
     }
 }
 
-button :hover {
+button:hover {
     background: lightgrey;
 }
