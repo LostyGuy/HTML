@@ -2,9 +2,10 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background: linear-gradient(to bottom, #ff69b4, #6a5acd);
+    background-size: cover;
     color: white;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,7 @@ body {
 .container {
     margin: 50px auto;
     max-width: 400px;
+    max-height: 90%;
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -32,6 +34,7 @@ button {
     color: black;
     font-size: 16px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 #logo {
@@ -57,4 +60,11 @@ button:hover {
 
 #balk {
     max-width: 50%;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
