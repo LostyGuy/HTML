@@ -69,3 +69,10 @@ button img {
     object-fit: cover;
     display: block;
 }
+
+#foot {
+
+    margin:auto;
+    font-size: x-small;
+
+}
