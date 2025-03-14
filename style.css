@@ -69,10 +69,3 @@ button img {
     object-fit: cover;
     display: block;
 }
-
-.container > #foot {
-
-    margin:auto;
-    font-size: 8px;
-
-}
