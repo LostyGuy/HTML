@@ -8,16 +8,16 @@ Each workstation has it's own space where we specify what are the need of chosen
 The structure is:
 
 -Main Page
-     -Hol
-          -Seat Order
-          -Tickets Regulations
-     -Balkon I
-          -Seat Order
-     -Balkon II
-          -Seat Order
-     -Balkon III
-          -Seat Order
-          -Door Guide
-          -TV Guide
-          -Lights Guide
-     -Excel - I've made a simplified DataBase with our shows so we can find how long and when will it end as well as every act in it
+  -Hol
+    -Seat Order
+    -Tickets Regulations
+  -Balkon I
+    -Seat Order
+  -Balkon II
+    -Seat Order
+  -Balkon III
+    -Seat Order
+    -Door Guide
+    -TV Guide
+    -Lights Guide
+  -Excel - I've made a simplified DataBase with our shows so we can find how long and when will it end as well as every act in it
