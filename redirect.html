@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 4em;
+            color: #d9534f;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .hidden-message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #5bc0de;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .hidden-message:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Oops! The page you are looking for does not exist.</p>
+    <p class="hidden-message">Or does it...? 👀</p>
+</body>
+</html>
