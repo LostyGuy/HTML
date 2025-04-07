@@ -1,3 +1,7 @@
+<?php
+session_start();
+$isLoggedIn = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true;
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -15,8 +19,9 @@
             Nie pozostawianie śmieci pod ladą
             </button><br>
         <a href="bk1-widow.html"><button>Podział szatni według miejsc</button></a><br>
-        <a href="index.html"><button>Cofnij</button></a>
-        </div>
+        <a href="<?php echo $isLoggedIn ? 'second_index.html' : 'login.php'; ?>">
+        <button><?php echo $isLoggedIn ? 'Cofnij' : 'Zaloguj się'; ?></button>
+</a>
 
 </body>
 </html>

@@ -1,21 +1,27 @@
 <?php
+session_start();
 
-    session_start();
-    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-        header("Location: second_index.html");
-        exit;
-    }
+// Redirect to another page if already logged in
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header("Location: second_index.html");
+    exit;
+}
 
-    $login = $_POST['login'];
-    $passwd = $_POST['passwd'];
+// Get login and password from POST request
+$login = isset($_POST['login']) ? $_POST['login'] : '';
+$passwd = isset($_POST['passwd']) ? $_POST['passwd'] : '';
 
-    if ($login == "mojekonto" && $passwd == "prywatne") {
+// Check credentials
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($login === "zgadnij" && $passwd === "prywatne") {
+        // Set session variable to indicate the user is logged in
+        $_SESSION['loggedin'] = true;
         header("Location: second_index.html");
         exit;
     } else {
         echo "<script>alert('Niepoprawny login lub hasło');</script>";
     }
-
+}
 ?>
 <!DOCTYPE html>
 <html lang="pl">
