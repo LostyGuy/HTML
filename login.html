@@ -14,10 +14,11 @@
         <p>Zaloguj się</p>
         <div class="buttons">
             <button><b>Przerwa techniczna przewidywana <br>na okres 30.03 do 3.05</b></button>
-
+            <button>
             <h2>Login</h2>
             <input type="text" id="username" placeholder="Username"><br>
             <input type="password" id="password" placeholder="Password"><br>
+            </button>
             <button onclick="login()">Login</button>
         
             <p id="message" style="color: red;"></p>
@@ -25,13 +26,14 @@
             <script>
                 const USERNAME = "mojekonto";
                 const PASSWORD = btoa("prywatne");
+
                 alert PASSWORD;
         
                 function login() {
                     const inputUser = document.getElementById("username").value;
                     const inputPass = document.getElementById("password").value;
         
-                    if (inputUser === USERNAME && inputPass === PASSWORD) {
+                    if (inputUser === USERNAME && btoa(inputPass) === PASSWORD) {
                         document.getElementById("message").style.color = "green";
                         document.getElementById("message").textContent = "Login successful!";
                         // You can redirect or show another screen here
